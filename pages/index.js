@@ -17,10 +17,10 @@ export default class extends React.Component {
   }
 
   // handling escape close
-  componentDidMount () {
-    document.addEventListener('keydown', this.onKeyDown)
-    this.regisServiceWorker()
-  }
+  // componentDidMount () {
+  //   document.addEventListener('keydown', this.onKeyDown)
+  //   this.regisServiceWorker()
+  // }
 
   componentWillUnmount () {
     document.removeEventListener('keydown', this.onKeyDown)
