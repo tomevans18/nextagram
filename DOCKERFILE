@@ -1,0 +1,22 @@
+FROM node:6.12.3-alpine
+
+# Create app directory
+RUN mkdir -p /usr/src/app/public/
+RUN mkdir -p /usr/src/app/static/
+RUN mkdir -p /usr/src/app/offline/
+
+# Copy deployment file
+COPY ./public /usr/src/app/public/
+COPY ./static /usr/src/app/static/
+COPY ./offline /usr/src/app/offline/
+COPY server.js /usr/src/app/
+COPY package.json /usr/src/app/
+COPY next.config.js /usr/src/app/
+
+# Install production dependencies
+WORKDIR /usr/src/app
+RUN yarn install --production
+
+# Start server
+EXPOSE 9000
+CMD [ "yarn", "start" ]

@@ -1,15 +1,9 @@
 const DEBUG = true
 
-const CACHE_NAME = "advance cache v1.0.0";
+const CACHE_NAME = "advance cache v2.0.2";
 const fileToCache = [
   "/",
   "/static/dora.png",
-  "/static/font-awesome/css/font-awesome.min.css",
-  "/static/font-awesome/fonts/fontawesome-webfont.eot",
-  "/static/font-awesome/fonts/fontawesome-webfont.svg",
-  "/static/font-awesome/fonts/fontawesome-webfont.ttf",
-  "/static/font-awesome/fonts/fontawesome-webfont.woff",
-  "/static/font-awesome/fonts/fontawesome-webfont.woff2",
 ]
 
 // activate event

@@ -1,5 +1,5 @@
 import React from 'react'
-import Photo from '../components/frame'
+import Photo from '../js/components/frame'
 
 export default ({ url: { query: { id } } }) => (
   <div className='permalink'>

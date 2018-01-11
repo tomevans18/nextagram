@@ -2,7 +2,7 @@ import React from 'react'
 import Router from 'next/router'
 import Head from 'next/head'
 
-import Modal from '../components/modal'
+import Modal from '../js/components/modal'
 
 export default class extends React.Component {
   static getInitialProps () {
@@ -16,11 +16,10 @@ export default class extends React.Component {
     this.onKeyDown = this.onKeyDown.bind(this)
   }
 
-  // handling escape close
-  // componentDidMount () {
-  //   document.addEventListener('keydown', this.onKeyDown)
-  //   this.regisServiceWorker()
-  // }
+  componentDidMount () {
+    document.addEventListener('keydown', this.onKeyDown)
+    // this.regisServiceWorker()
+  }
 
   componentWillUnmount () {
     document.removeEventListener('keydown', this.onKeyDown)

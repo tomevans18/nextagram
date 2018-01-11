@@ -11,6 +11,8 @@ if (process.env.NODE_ENV !== 'production') {
   middlewares.push(createLogger())
 }
 
+console.log(process.env.NODE_ENV, 'env')
+
 const storeEnhancer = [applyMiddleware(...middlewares)]
 const finalCreateStore = compose(...storeEnhancer)(createStore)
 const configureStore = initialState => finalCreateStore(rootReducer, initialState)

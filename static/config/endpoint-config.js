@@ -1,1 +1,1 @@
-const _globalEndpoints = "http://api.dev.dotography.net"
+const _globalEndpoints = "happy"
