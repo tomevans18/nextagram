@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 
 export default ({ id }) => (
   <div className='photo'>
@@ -10,7 +9,7 @@ export default ({ id }) => (
     <div className='sidebar'>
       <ul className='sidebarList'>
         <li>
-          <Link><a href='/profile?id=nkzawa'>@nkzawa</a></Link>
+          <a href='/profile?id=nkzawa'>@nkzawa</a>
           - Great photo!
         </li>
       </ul>

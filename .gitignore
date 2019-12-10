@@ -1,5 +1,5 @@
 # dependencies
-node_modules
+# node_modules # Done to show the functionality when https://github.com/zeit/next.js/blob/69b7538dce2fa8853bccfa2f65c8c305d76daae3/packages/next/next-server/lib/router/router.ts#L319 is false
 
 # build output
 .next

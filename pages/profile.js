@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-export default ({ url: { query: { id } } }) => (
+export default ({ url: { query: { id = 'Not logged in' } } }) => (
   <div className='main'>
     <h1 className='heading'>
       User profile:
